@@ -9,6 +9,10 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 done;
 unset file;
 
+eval "$(rbenv init -)"
+
+ln -sf "$(brew --prefix)/share/git-core/contrib/diff-highlight/diff-highlight" ~/bin/diff-highlight
+
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
 

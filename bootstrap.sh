@@ -20,3 +20,9 @@ else
 	fi;
 fi;
 unset doIt;
+
+# install diff-highlight
+/diff-highlight > ~/bin/diff-highlight && chmod +x ~/bin/diff-highlight
+
+# change shell version.
+chsh -s /usr/local/bin/bash
